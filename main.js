@@ -74,25 +74,29 @@ solveBtn.addEventListener('click', function () {
         }
         arr.push(p);
     }
-    
-    sudokuSolver(arr, 0, 0);
-    console.log(arr);
-    const box = document.getElementById('box');
-    const boxCont = document.getElementById('boxCont');
-    for(let i = 0; i<9; i++) {
-        for(let j = 0; j<9; j++){
-            const tile = document.createElement("div");
-            tile.classList.add("tile");
-            box.appendChild(tile);
-            tile.innerText = `${arr[i][j]}`;
+    if(sudokuSolver(arr, 0, 0)){
+        console.log(arr);
+        const box = document.getElementById('box');
+        const boxCont = document.getElementById('boxCont');
+        for(let i = 0; i<9; i++) {
+            for(let j = 0; j<9; j++){
+                const tile = document.createElement("div");
+                tile.classList.add("tile");
+                box.appendChild(tile);
+                tile.innerText = `${arr[i][j]}`;
+            }
         }
+        box.style.zIndex = "99999";
+        box.style.transform = "translateY(0)";
+        box.style.visibility = "visible";
+        box.style.backdropFilter = "blur(10px)";
+        box.style.transition = "0.5s ease-in-out";
+        boxCont.style.display = "flex";
     }
-    box.style.zIndex = "99999";
-    box.style.transform = "translateY(0)";
-    box.style.visibility = "visible";
-    box.style.backdropFilter = "blur(10px)";
-    box.style.transition = "0.5s ease-in-out";
-    boxCont.style.display = "flex";
+    else {
+        alert("Give Sudoku is not valid !!");
+    }
+    
     
 });
 
