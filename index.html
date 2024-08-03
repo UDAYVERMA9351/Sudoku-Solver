@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compate" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Sudoku Solver</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <nav>
+        <h1 class="title">UV</h1>
+        <a href="https://github.com/UDAYVERMA9351" class="link"><i class="fa-brands fa-github"></i></a>
+    </nav>
+    <div class="container-title">
+        <h1 class="title">Sudoku Solver</h1>
+    </div>
+    <div class="container">
+
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" class="first" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+        <input type="text" maxlength="1" class="second" name="box" id="cell">
+    </div>
+
+    <div class="buttons">
+        <div class="btn" id="solveBtn">Solve Puzzle</div>
+        <div class="btn" onclick="window.location.reload()">Reset Puzzle</div>
+    </div>
+
+    <div class="guide">
+        <h1 class="title" style="font-size: 1.5rem;">Guide</h1>
+        <ul>
+            <li>
+                Fill all the boxes with their given values.
+            </li>
+            <li>
+                Blank places should be remain as it is.
+            </li>
+            <li>
+                Click on <strong>Solve Puzzle</strong>.
+            </li>
+            <li>
+                Solution is here!!
+            </li>
+        </ul>
+    </div>
+    <div class="box-cont" onclick="document.getElementById('boxCont').style.display = 'none'" id="boxCont">
+        <h1>Puzzle Solved !!</h1>
+        <div class="box" id="box">
+
+        </div>
+    </div>
+    
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
